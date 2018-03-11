@@ -1,5 +1,7 @@
 @echo off
 
+set 
+
 mkdir build
 pushd build
 mkdir win64
