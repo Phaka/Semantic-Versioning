@@ -6,7 +6,7 @@ mkdir build
 pushd build
 mkdir win64
 pushd win64 
-pushd %VS140COMNTOOLS%
+pushd %VS150COMNTOOLS%
 call vsdevcmd.bat /clean_env 
 call vsdevcmd.bat amd64
 popd
@@ -17,7 +17,7 @@ popd
 
 mkdir win32
 pushd win32
-pushd %VS140COMNTOOLS%
+pushd %VS150COMNTOOLS%
 call vsdevcmd.bat /clean_env 
 call vsdevcmd.bat amd64_x86
 popd
@@ -27,7 +27,7 @@ nmake package
 popd
 popd
 
-pushd %VS140COMNTOOLS%
+pushd %VS150COMNTOOLS%
 call vsdevcmd.bat /clean_env 
 popd
 
